@@ -1,0 +1,311 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600,800';
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans';
+     width: 940px;
+     margin: auto;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+span {
+  margin-left: 25px;
+}
+
+
+/* Top Nav */
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: #033048;
+  background-size: cover;
+  vertical-align: middle;
+  float: left;
+}
+
+.relaxr_logo {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  margin: 20px 0 0 40px;
+  float: left;
+}
+
+.menu_items {
+  text-align: right;
+  font-size: 24px;
+  font-weight: 600;
+  color: #f9e42e;
+  margin: 30px 40px 0 0;
+  float: right;
+}
+
+.body_container {
+  width: 940px; 
+  display: flex;
+}
+
+/* Blogs */
+
+.blog_container{
+  background-color: #f0efef;
+  width: 700px;
+  max-height: 100%;
+  margin: auto;
+  padding: 20px 10px 40px 20px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.blog_header  {
+  font-size: 40px;
+  font-weight: 600;
+  float: left; 
+  width: 100%;
+}
+
+.blog_image1 {
+  background-image: url(../images/blog_photo1.jpg);
+  background-repeat: no-repeat;
+  padding: 280px 0 0 330px;
+  margin-top: 130px;
+  box-sizing: border-box;
+}
+
+.blog_image2  {
+  background-image: url(../images/blog_photo2.jpg);
+  background-repeat: no-repeat;
+  padding: 280px 0 0 330px;
+  margin-top: 130px;
+  box-sizing: border-box;
+}
+
+p  {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+p:first-child:first-letter { 
+  float: left; 
+  font-size: 140px; 
+  font-weight: 600;
+  line-height: 120px; 
+  padding-top: 4px 8px 0 3px; 
+}
+
+.more {
+  text-align: right;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 30px;
+  font-weight: 600;
+  padding: 0 20px 0 0;
+}  
+
+.more a:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar */
+
+.sidebar_container {
+    background-color: #f0efef;
+    width: 240px;
+    padding: 0 20px 0 0;
+    float: right;
+}
+
+.sidebar_header {
+  font-size: 32px;
+  font-weight: 800;
+  padding-top: 20px;
+}
+
+.categories {
+  width: 100%;
+}
+
+ul{
+  padding: 5px;
+}
+
+ul li  {
+  font-size: 22px;
+  font-weight: 300;
+  list-style: none;
+  text-align: left;
+}
+
+.sidebar_about  {
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.learn_more {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.ad_unit  {
+  margin-right: 20px;
+  float: left;
+  width: 30%;
+}
+
+.ad_unit img  {
+  width: 230px;
+  height: auto;
+}
+
+/* Sign Up Bar */
+
+.signup_container {
+  height: 80px;
+  background-color: #f9e42e;
+  text-align: center;
+  vertical-align: middle;
+  clear: both;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+.signup_button {
+  background-color: #033048;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+  padding: 5px;
+  color: white;
+  font-weight: 800;
+  font-size: 12px;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.signup_button a:link {
+  color: white;
+}
+
+.signup_button a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.bottom_container {
+  width: 100%;
+  height: 100%;
+  clear: both;
+  flex-flow: column wrap;
+}
+
+.footer_container {
+  color: white;
+  background-color: #121212;
+  height: 230px; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.relaxr_footer {
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  vertical-align: middle;
+  color: #f9e42e;
+  padding-top: 50px;
+}
+
+.social_icons {
+  text-align: center;
+  vertical-align: middle;
+  padding: 30px 40px 0 0;
+}
+
+.footer_copyright {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 30px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
